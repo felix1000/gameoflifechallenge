@@ -23,7 +23,7 @@ The System is packaged into a docker container that helps developers easier to d
 The System is already deployed to GCP using GKE for Real-Time Testing. Using GCP can offer fast response, scalability and on-demand Pricing. In addition, it reduce much works from build a good infrastructure but results having an enterprise level Network at the same time.
 ## Software Architecture
 ### Overview
-<img src="doc/SoftwareArchitecture.png"/>
+![Image of Software Architecture](doc/SoftwareArchitecture.png)
 ### Front End Web Application
 #### Angular 4.0.0
 This System is using Angular as Front End in order to offer a fast response to the User. In addition, Angular provide the framework that keeps those HTML and JavaScript easy to maintain because of the its Component Based Architecture.
@@ -51,7 +51,7 @@ The System uses 3000 tcp on http communication and 4000 tcp on Web-Socket commun
 2. Go to Folder with the downloaded sources
 3. Input Command "ng build"
 4. Input Command "npm start"
-5. Open a Browser enter address "http://<your IP or domain>:3000"
+5. Open a Browser enter address "http://{{your IP or domain}}:3000"
 ### 4.3 Enjoy
 The Game will move 1 step per second. Just Enjoy what the game generate for you. or...
 1. Clicking a Tile in the Game Map to add a Live Cell.
