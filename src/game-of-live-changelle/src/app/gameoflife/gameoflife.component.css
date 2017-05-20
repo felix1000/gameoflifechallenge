@@ -1,0 +1,72 @@
+.tile{
+  min-width: 25px;
+  min-height: 25px;
+}
+
+.lifetile{
+  visibility: visible;
+}
+
+.deadtile{
+  visibility: hidden;
+}
+
+.patternTile{
+  min-width: 15px;
+  min-height: 15px;
+}
+
+.centerContent{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.vcenterContent{
+  margin-top: 100%;
+}
+
+.patternBar{
+  min-height: 45px;
+}
+
+table.tileMap, tr.tileMap, td.tileMap{
+  border: 1px solid black;
+}
+
+@keyframes fadeSuccessColor{
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+@-moz-keyframes fadeSuccessColor {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    A100% { opacity: 0; }
+}
+@-webkit-keyframes fadeSuccessColor {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@-o-keyframes fadeSuccessColor {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.dropSuccessTile{
+  animation: fadeSuccessColor 1s infinite;
+  -moz-animation: fadeSuccessColor 1s infinite;
+  -webkit-animation: fadeSuccessColor 1s infinite;
+  -o-animation: fadeSuccessColor 1s infinite;
+  background-color: green;
+}
+
+.dropFailTile{
+  animation: fadeSuccessColor 1s infinite;
+  -moz-animation: fadeSuccessColor 1s infinite;
+  -webkit-animation: fadeSuccessColor 1s infinite;
+  -o-animation: fadeSuccessColor 1s  infinite;
+  background-color: red;
+}

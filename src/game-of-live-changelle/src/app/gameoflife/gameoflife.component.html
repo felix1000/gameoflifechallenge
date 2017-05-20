@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3" *ngFor="let p of prredfinedpattern">
+      <div>
+        <div>
+          <table class="centerContent" draggable="true" (dragstart)="onDragStart($event, p.pattern)">
+            <tr *ngFor="let r of p.pattern">
+              <td *ngFor="let c of r"><div class="patternTile"
+                [class.lifetile]="c"
+                [class.deadtile]="!c"
+                [style.background-color]='playerColor'></div></td>
+            </tr>
+          </table>
+        </div>
+        <div class="centerContent"><button class="btn" (click)="radomPattern(p.pattern)">{{p.name}}</button></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div>
+        <table class="tileMap centerContent">
+            <tr class="tileMap" *ngFor="let r of golMap">
+              <td class="tileMap" *ngFor="let c of r" (click)="markLifeTile(c.x, c.y)"
+                (dragover)="allowDrop($event, c.x, c.y)" (drop)="onDrop($event, dropData, c.x, c.y)" (dragleave)="onDragLeave($event)"
+                [class.dropSuccessTile]="markAsDropSuccess(c.x, c.y)" [class.dropFailTile]="markAsDropFail(c.x, c.y)">
+                <div class="tile"
+                  id="tile_{{c.x}}:{{c.y}}"
+                  [class.lifetile]="c.value"
+                  [class.deadtile]="!c.value"
+                  [style.background-color]='c.color'>
+                </div>
+              </td>
+            </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
