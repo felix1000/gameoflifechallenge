@@ -52,7 +52,7 @@ The System uses 3000 tcp on http communication and 4000 tcp on Web-Socket commun
 4. Input Command "npm start"
 5. Open a Browser enter address "http://<your IP or domain>:3000"
 ### 4.3 Enjoy
-![Image of Screen](doc/SoftwareArchitecture.png)
+![Image of Screen](doc/Screen.png)
 The Game will move 1 step per second. Just Enjoy what the game generate for you. or...
 1. Clicking a Tile in the Game Map to add a Live Cell.
 2. Clicking the Name of the Pre-defined Pattern to add in it into the Map with Random Location.
