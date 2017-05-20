@@ -1,10 +1,10 @@
-import { GameOfLiveChangellePage } from './app.po';
+import { GameOfLifeChallengePage } from './app.po';
 
-describe('game-of-live-changelle App', () => {
-  let page: GameOfLiveChangellePage;
+describe('game-of-life-Challenge App', () => {
+  let page: GameOfLifeChallengePage;
 
   beforeEach(() => {
-    page = new GameOfLiveChangellePage();
+    page = new GameOfLifeChallengePage();
   });
 
   it('should display message saying app works', () => {

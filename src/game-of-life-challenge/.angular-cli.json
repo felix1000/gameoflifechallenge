@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "game-of-live-changelle"
+    "name": "game-of-life-challenge"
   },
   "apps": [
     {

@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class GameOfLiveChangellePage {
+export class GameOfLifeChallengePage {
   navigateTo() {
     return browser.get('/');
   }
