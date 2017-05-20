@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: game-of-life
+  labels:
+    app: web
+spec:
+  containers:
+    - name: game-of-life
+      image: gcr.io/game-of-life-168114/game-of-life:v1.0.0
+      ports:
+        - containerPort: 3000
+        - containerPort: 4000
+        

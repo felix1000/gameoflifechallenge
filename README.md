@@ -20,8 +20,8 @@ Conway’s Game of Life is a famous simulation that demonstrates cellular automa
 #### Docker
 The System is packaged into a docker container that helps developers easier to deploy on any machine and environment. In addition, I can offer Scalability with combining Cloud Services.
 #### GCP
-The System is already deployed to GCP using GKE for Real-Time Testing. Using GCP can offer fast response, scalability and on-demand Pricing. In addition, it reduce much works from build a good infrastructure but results having an enterprise level Network at the same time.
-### 3.2 Software Architecture
+The System is already deployed to GCP using GKE for Real-Time Testing (http://104.155.138.73:3000/). Using GCP can offer fast response, scalability and on-demanded Pricing. In addition, it reduce much works from build a good infrastructure but results having an enterprise level Network at the same time.
+### Software Architecture
 #### Overview
 ![Image of Software Architecture](doc/SoftwareArchitecture.png)
 #### Angular 4.0.0
@@ -50,8 +50,9 @@ The System uses 3000 tcp on http communication and 4000 tcp on Web-Socket commun
 2. Go to Folder with the downloaded sources
 3. Input Command "ng build"
 4. Input Command "npm start"
-5. Open a Browser enter address "http://{{your IP or domain}}:3000"
+5. Open a Browser enter address "http://<your IP or domain>:3000"
 ### 4.3 Enjoy
+![Image of Screen](doc/SoftwareArchitecture.png)
 The Game will move 1 step per second. Just Enjoy what the game generate for you. or...
 1. Clicking a Tile in the Game Map to add a Live Cell.
 2. Clicking the Name of the Pre-defined Pattern to add in it into the Map with Random Location.

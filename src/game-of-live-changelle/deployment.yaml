@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Deployment
+metadata:
+  name: game-of-life-deployment
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: game-of-life-deployment
+    spec:
+      containers:
+      - name: game-of-life-deployment
+        image:  gcr.io/game-of-life-168114/game-of-life:v1.0.0
+        ports:
+          - containerPort: 3000
+		  - containerPort: 4000
