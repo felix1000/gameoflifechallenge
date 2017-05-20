@@ -48,9 +48,10 @@ The System uses 3000 tcp on http communication and 4000 tcp on Web-Socket commun
 ### 4.2 Running
 1. Open Terminal
 2. Go to Folder with the downloaded sources
-3. Input Command "ng build"
-4. Input Command "npm start"
-5. Open a Browser enter address "http://<your IP or domain>:3000"
+3. Input Command "npm install"
+4. Input Command "ng build"
+5. Input Command "npm start"
+6. Open a Browser enter address "http://<your IP or domain>:3000"
 ### 4.3 Enjoy
 ![Image of Screen](doc/Screen.png)
 The Game will move 1 step per second. Just Enjoy what the game generate for you. or...
