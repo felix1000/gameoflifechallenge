@@ -23,7 +23,7 @@ The System is packaged into a docker container that helps developers easier to d
 The System is already deployed to GCP using GKE for Real-Time Testing. Using GCP can offer fast response, scalability and on-demand Pricing. In addition, it reduce much works from build a good infrastructure but results having an enterprise level Network at the same time.
 ## Software Architecture
 ### Overview
-<img src="doc/SoftwareArchitecture.png"/>
+![Image of Software Architecture](doc/SoftwareArchitecture.png)
 ### Front End Web Application
 #### Angular 4.0.0
 This System is using Angular as Front End in order to offer a fast response to the User. In addition, Angular provide the framework that keeps those HTML and JavaScript easy to maintain because of the its Component Based Architecture.
