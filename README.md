@@ -15,25 +15,24 @@ Conway’s Game of Life is a famous simulation that demonstrates cellular automa
 * This change should be synchronized across all connected clients.
 * When a dead cell revives by rule #4 “Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.”, it will be given a color that is the average of its neighbors.
 * include a toolbar that places some predefined patterns at random places with the player’s color.
-# 3. System Design
-## 3.1 Hardware Architecture
-### Docker
+## 3. System Design
+### 3.1 Hardware Architecture
+#### Docker
 The System is packaged into a docker container that helps developers easier to deploy on any machine and environment. In addition, I can offer Scalability with combining Cloud Services.
-### GCP
+#### GCP
 The System is already deployed to GCP using GKE for Real-Time Testing. Using GCP can offer fast response, scalability and on-demand Pricing. In addition, it reduce much works from build a good infrastructure but results having an enterprise level Network at the same time.
-## Software Architecture
-### Overview
+### Software Architecture
+#### Overview
 ![Image of Software Architecture](doc/SoftwareArchitecture.png)
-### Front End Web Application
 #### Angular 4.0.0
 This System is using Angular as Front End in order to offer a fast response to the User. In addition, Angular provide the framework that keeps those HTML and JavaScript easy to maintain because of the its Component Based Architecture.
-### Node.js
+#### Node.js
 At the backend, Node.js acts as an Application Server that accepts the http request, web-socket, etc... and provides Interface or Data Update to the User. Node.js provides very fast response to the request and fully utilizes the Hardware by its Non-Blocking I/O.
-### Express
+#### Express
 Express Framework is used behind Node.js. It helps developer to keep the maintainability of the codes by using the routes and helping developers to start a web server faster in Node.js by its API provided.
-### Socket IO
+#### Socket IO
 Socket IO is initialized by Express Framework that provides an Web-Socket Interface to exchange real-time data for the Application, such as synchronize the Game Map between all connected clients.
-### game-loop
+#### game-loop
 game-loop is the module of Node.js that provides a very accurate tick to the System to update the Game Map internally.
 ## 4. Get Started
 ### 4.1 Prerequisites
@@ -51,7 +50,7 @@ The System uses 3000 tcp on http communication and 4000 tcp on Web-Socket commun
 2. Go to Folder with the downloaded sources
 3. Input Command "ng build"
 4. Input Command "npm start"
-5. Open a Browser enter address "http://{{your IP or domain}}:3000"
+5. Open a Browser enter address "http://<your IP or domain>:3000"
 ### 4.3 Enjoy
 The Game will move 1 step per second. Just Enjoy what the game generate for you. or...
 1. Clicking a Tile in the Game Map to add a Live Cell.
