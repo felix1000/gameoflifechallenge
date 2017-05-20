@@ -21,7 +21,7 @@ Conway’s Game of Life is a famous simulation that demonstrates cellular automa
 The System is packaged into a docker container that helps developers easier to deploy on any machine and environment. In addition, I can offer Scalability with combining Cloud Services.
 #### GCP
 The System is already deployed to GCP using GKE for Real-Time Testing. Using GCP can offer fast response, scalability and on-demand Pricing. In addition, it reduce much works from build a good infrastructure but results having an enterprise level Network at the same time.
-### Software Architecture
+### 3.2 Software Architecture
 #### Overview
 ![Image of Software Architecture](doc/SoftwareArchitecture.png)
 #### Angular 4.0.0
